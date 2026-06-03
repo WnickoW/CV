@@ -100,20 +100,3 @@ btnVerTodo.addEventListener('click', function () {
            ? 'VER MENOS <span class="material-symbols-outlined">arrow_back</span>'
            : 'VER TODO EL ARCHIVO <span class="material-symbols-outlined">arrow_forward</span>';
 });
-
-
-
-// ===== Modo Oscuro / Claro =====
-const btnOscuro = document.getElementById('btn-oscuro');
-
-btnOscuro.addEventListener('click', function() {
-    const html = document.documentElement;
-
-    if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        btnOscuro.innerHTML = 'Modo Oscuro <span class="material-symbols-outlined text-[18px]">bolt</span>';
-    } else {
-        html.classList.add('dark');
-        btnOscuro.innerHTML = 'Modo Claro <span class="material-symbols-outlined text-[18px]">light_mode</span>';
-    }
-});
